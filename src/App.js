@@ -1,38 +1,31 @@
 import styled from "styled-components";
 
-const BackTitle = styled.div`
-border: 0;
-box-shadow: 1px 1px 1px 1px black;
-margin-left:25em;
-width:50%;
-display:flex;
-justify-content: space-between;
+
+const BasicTitle = styled.h1`
+text-align: center;
+text-transform: capitalize;
 `;
 
+const DefaultButton = styled.button`
+  background: lightblue;
+  color:black;
+  border: none;
+  border-radius: 0.25rem;  
+  cursor: pointer;
+  text-transform: capitalize;
+  padding: 0.25rem;
+  display: block;
+  width: 200px;
+  margin: 1rem auto;
 
-const Title = styled.h3`
-color:red;
-padding: 1em;
-padding-left: 3em;
-text-align: left;
+  box-shadow: 0 0 0.3em black;
 `;
-
-const Title3 = styled.h3`
-color:red;
-padding: 1em;
-padding-right: 3em;
-text-align: right;
-
-`;
-
 
 function App() {
   return (
-    <div>
-     <BackTitle>
-       <Title>styled components</Title>
-       <Title3>styled components</Title3>
-     </BackTitle>
+    <div style={{padding: '2rem'}}>
+        <BasicTitle>styled component</BasicTitle>
+        <DefaultButton className="btn">click me</DefaultButton>
 
     </div>
   );
